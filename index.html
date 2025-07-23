@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uganda Job Connect - Your Career Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Loader Overlay -->
+    <div id="loader" class="loader-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <span><i class="fa-solid fa-location-dot"></i> Kampala, Uganda</span>
+            <span><i class="fa-solid fa-phone"></i> +256 777 123 456</span>
+            <span><i class="fa-solid fa-envelope"></i> jobs@ugandajobconnect.com</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Uganda Job Connect</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#featured-jobs">Browse Jobs</a></li>
+                <li><a href="#our-story">About Us</a></li>
+                <li><a href="#register-section">Register</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content container">
+                <h1>Connect Your Career with <span>Uganda's</span> Top Opportunities</h1>
+                <p>We bridge the gap between talented professionals and leading employers across Uganda. Your dream job is just one connection away.</p>
+                <div class="hero-buttons">
+                    <a href="#featured-jobs" class="btn btn-accent">Find Jobs <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#register-section" class="btn btn-light">Register as a Candidate</a>
+                </div>
+                <div class="hero-stats">
+                    <span><i class="fa-solid fa-user-tie"></i> 5,000+ Job Seekers</span>
+                    <span><i class="fa-solid fa-building"></i> 200+ Partner Companies</span>
+                    <span><i class="fa-solid fa-circle-check"></i> 95% Success Rate</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="why-us-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose Uganda Job Connect</h2>
+                    <p>As Uganda's leading recruitment intermediary, we've built strong relationships with top employers across multiple industries.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fa-solid fa-users-gear"></i>
+                        <h3>Expert Recruitment</h3>
+                        <p>Our experienced team understands the Ugandan job market and connects the right talent with the right opportunities.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <h3>Targeted Matching</h3>
+                        <p>We use advanced matching algorithms to ensure job seekers are connected with positions that fit their skills and career goals.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Quality Assurance</h3>
+                        <p>We thoroughly vet both employers and job seekers to ensure high-quality matches and successful long-term placements.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <h3>Ongoing Support</h3>
+                        <p>Our relationship doesn't end with placement. We provide ongoing support to ensure both parties are satisfied with the match.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Job Listings -->
+        <section id="featured-jobs" class="job-listings-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Job Opportunities</h2>
+                    <p>Discover exciting career opportunities across various sectors in Uganda. Our partner companies are looking for talented individuals like you.</p>
+                </div>
+                <!-- Search Form -->
+                <form class="search-form" id="searchForm">
+                    <div class="search-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="keywordSearch" placeholder="Job title, keyword, or company">
+                    </div>
+                    <div class="search-input">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" id="locationSearch" placeholder="City or region (e.g., Kampala)">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search Jobs</button>
+                </form>
+
+                <div class="job-grid" id="jobGrid">
+                    <!-- Job cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section id="our-story" class="our-story-section">
+            <div class="container story-content">
+                <div class="story-text">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2015, Uganda Job Connect emerged from a simple observation: there was a significant disconnect between talented job seekers and employers looking for skilled professionals in Uganda.</p>
+                    <p>Today, we've successfully placed over 5,000 professionals in roles across banking, healthcare, technology, agriculture, and development sectors. Our success is measured by the long-term satisfaction of both our job seekers and employer partners.</p>
+                </div>
+                <div class="story-stats">
+                    <div class="stat-box blue">
+                        <h4>5,000+</h4>
+                        <p>Successful Placements</p>
+                    </div>
+                    <div class="stat-box orange">
+                        <h4>200+</h4>
+                        <p>Partner Companies</p>
+                    </div>
+                    <div class="stat-box green">
+                        <h4>95%</h4>
+                        <p>Success Rate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Job Seeker Registration Section -->
+        <section id="register-section" class="register-section">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fa-solid fa-user-plus section-icon"></i>
+                    <h2>Join Our Talent Network</h2>
+                    <p>Register with us and we'll connect you with opportunities that match your skills and career goals. Get notified first about new openings in your field.</p>
+                </div>
+                <form id="registrationForm" class="registration-form">
+                    <h3>Job Seeker Registration</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+256 777 123 456" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Current Location *</label>
+                            <input type="text" id="location" name="location" placeholder="e.g., Kampala, Entebbe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="education">Highest Education Level *</label>
+                            <select id="education" name="education" required>
+                                <option value="">Select education level</option>
+                                <option value="certificate">Certificate</option>
+                                <option value="diploma">Diploma</option>
+                                <option value="bachelors">Bachelor's Degree</option>
+                                <option value="masters">Master's Degree</option>
+                                <option value="phd">PhD</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="experience">Years of Experience *</label>
+                            <select id="experience" name="experience" required>
+                                <option value="">Select experience</option>
+                                <option value="0-1">0-1 Year</option>
+                                <option value="2-4">2-4 Years</option>
+                                <option value="5-7">5-7 Years</option>
+                                <option value="8+">8+ Years</option>
+                            </select>
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <label for="skills">Skills & Expertise *</label>
+                        <textarea id="skills" name="skills" rows="4" placeholder="List your key skills, technologies, and areas of expertise..." required></textarea>
+                    </div>
+                    <div class="form-group terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the terms and conditions and privacy policy *</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full-width">
+                        <i class="fa-solid fa-rocket"></i> Register Now
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h4>Uganda Job Connect</h4>
+                <p>Connecting talented professionals with Uganda's top employers. Your career success is our mission.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#featured-jobs">Browse Jobs</a></li>
+                    <li><a href="#register-section">Register as Job Seeker</a></li>
+                    <li><a href="#our-story">About Us</a></li>
+                    <li><a href="#">Career Tips</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Popular Categories</h4>
+                 <ul>
+                    <li><a href="#">IT & Technology</a></li>
+                    <li><a href="#">Banking & Finance</a></li>
+                    <li><a href="#">Healthcare</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Agriculture</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Plot 123, Kampala Road, Kampala, Uganda</li>
+                    <li><i class="fa-solid fa-phone"></i> +256 777 123 456</li>
+                    <li><i class="fa-solid fa-envelope"></i> jobs@ugandajobconnect.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Uganda Job Connect. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
